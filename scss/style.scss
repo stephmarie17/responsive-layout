@@ -1,201 +1,71 @@
 @import 'config';
+@import 'utilities';
 @import 'mobile';
 
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  scroll-behavior: smooth;
 }
 
 body {
-  background-color: $light-color;
-  font-family: $font-stack;
-  line-height: 1.75;
+  font-family: $primary-font;
 }
 
-.container {
-  max-width: 1100px;
-  padding: 0 30px;
-  margin: 0 auto;
-  overflow: auto;
-}
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 8vh;
+  background-color: $primary-color;
 
-a {
-  text-decoration: none;
-}
+  .logo {
+    color: #ebeaea;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    font-size: 20px;
+  }
 
-.hero {
-  height: 700px;
-
-  nav {
+  .nav-links {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-
-    .logo {
-      cursor: default;
-      font-size: 1.75em;
-      background: -webkit-linear-gradient($dark-color, $primary-color);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-    }
-
-    ul {
-      display: flex;
-      list-style-type: none;
-    }
+    justify-content: space-around;
+    width: 40%;
 
     li {
-      padding: 20px;
+      list-style: none;
     }
 
-    a:hover {
-      color: $primary-color;
-      border-bottom: 4px solid $primary-color;
-    }
-
-    .hamburger-icon {
-      display: none;
-    }
-  }
-
-  a {
-    color: $dark-color;
-  }
-
-  &-content {
-    height: 500px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 30px;
-    background-image: $hero-img;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    color: $light-color;
-    padding: 10px;
-
-    h1 {
-      color: $secondary-color;
-      text-transform: uppercase;
-      padding: 20px;
-    }
-
-    p {
-      margin-top: 20px;
-      padding: 0 20px;
-      background-color: rgba(0, 0, 0, 0.3);
-    }
-
-    button {
-      margin: 40px 20px 0;
-      padding: 10px;
-      font-size: 1em;
-      border-radius: 6px;
-      background-color: $secondary-color;
-      color: $dark-color;
+    a {
+      color: #ebeaea;
+      text-decoration: none;
+      letter-spacing: 3px;
       font-weight: bold;
-      border: none;
+      font-size: 14px;
     }
   }
 
-  &-icon {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    i {
-      margin-top: 20px;
-      font-size: 2em;
-      color: $primary-color;
-    }
-  }
-}
-
-.about {
-  display: flex;
-  margin-top: 30px;
-  &-content {
-    background-color: white;
-    color: $dark-color;
-    padding: 20px;
-    max-height: 1000px;
-    h2 {
-      text-align: center;
-      text-transform: uppercase;
-      color: $primary-color;
-    }
-    img {
-      width: 100%;
+  .burger {
+    display: none;
+    div {
+      width: 25px;
+      height: 3px;
+      background-color: #ebeaea;
+      margin: 5px;
+      transition: transform 0.5s ease-in;
     }
   }
 }
 
-.splash-cards {
-  margin-top: 30px;
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-evenly;
-
-  .splash-card {
-    margin: 5px;
-    background-color: white;
-    width: 300px;
-
-    h2 {
-      text-align: center;
-      text-transform: uppercase;
-      color: $primary-color;
-    }
-
-    .img-hover {
-      overflow: hidden;
-    }
-
-    img {
-      height: 300px;
-      transition: transform 0.5s ease;
-    }
-
-    .img-hover:hover img {
-      transform: scale(1.25);
-    }
-
-    p {
-      padding: 20px;
-    }
-  }
+.nav-active {
+  transform: translateX(0%);
 }
 
-footer {
-  background-color: $primary-color;
-  color: white;
-  margin-top: 30px;
-  margin-bottom: 0;
-  padding: 10px;
-  position: sticky;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-
-  i {
-    font-size: 2em;
-  }
-
-  p {
-    font-size: 0.75em;
-  }
-
-  a {
-    color: $light-color;
-  }
-  a:hover {
-    color: $secondary-color;
-  }
-  a:visited {
-    color: $light-color;
-  }
+.toggle .line1 {
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+.toggle .line2 {
+  opacity: 0;
+}
+.toggle .line3 {
+  transform: rotate(45deg) translate(-5px, -6px);
 }
