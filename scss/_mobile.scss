@@ -1,0 +1,12 @@
+@media (max-with: 800px) {
+  .hero {
+    height: 400px;
+    &-content {
+      text-align: center;
+    }
+  }
+  .splash-cards {
+    display: block;
+    margin: 0 auto;
+  }
+}
