@@ -47,7 +47,7 @@
       text-align: center;
       text-transform: uppercase;
       letter-spacing: 3px;
-      font-size: 24px;
+      font-size: 1rem;
     }
   }
 }
@@ -68,6 +68,10 @@
       margin: 0 auto;
       padding-top: 10px;
     }
+
+    .card-sm:last-of-type {
+      margin-bottom: 20px;
+    }
   }
 
   .services-cards {
@@ -77,6 +81,10 @@
     .card-md {
       margin: 0 auto;
       margin-bottom: 10px;
+    }
+
+    .card-md:last-of-type {
+      margin-bottom: 20px;
     }
   }
 }
