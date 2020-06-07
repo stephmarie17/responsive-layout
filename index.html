@@ -15,22 +15,86 @@
     />
   </head>
   <body>
+    <!-- Navigation -->
     <nav>
       <div class="logo">
         <h4>High Violet</h4>
       </div>
       <ul class="nav-links">
         <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Services</a></li>
-        <li><a href="#">Contact</a></li>
+        <li><a href="#about" alt="About High Violet">About</a></li>
+        <li><a href="#services" alt="Our Services">Services</a></li>
+        <li><a href="#contact" alt="Contact Us">Contact</a></li>
       </ul>
-      <div class="burger">
+      <div class="burger" aria-label="Toggle navigation menu">
         <div class="line1"></div>
         <div class="line2"></div>
         <div class="line3"></div>
       </div>
     </nav>
+    <!-- Hero -->
+    <section class="hero">
+      <h1>Yoga, Meditation, & Wellness</h1>
+      <h4>
+        Community-run yoga center in the heart of the Sierra Nevada Mountains
+      </h4>
+    </section>
+    <!-- About Cards -->
+    <section class="about-cards">
+      <div class="card-sm">
+        <img src="assets/cards/madison-lavern-CDJCAcAAPlU-unsplash.jpg" alt="Yoga dancer's pose"/>
+        <h3>Learn</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+      </div>
+      <div class="card-sm">
+        <img src="assets/cards/madison-lavern-4gcqRf3-f2I-unsplash.jpg" alt="Woman meditating"/>
+        <h3>Reflect</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+      </div>
+      <div class="card-sm">
+        <img src="assets/cards/madison-lavern-D2uK7elFBU4-unsplash.jpg" alt="Backbend pose"/>
+        <h3>Grow</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+      </div>
+    </section>
+    <!-- About Content -->
+    <section class="about-content" id="about">
+      <h2>About High Violet</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    </section>
     <script type="text/javascript" src="js/script.js"></script>
+    <!-- Services Section -->
+    <section class="services-cards" id="services">
+      <div class="card-md">
+        <img src="assets/cards/madison-lavern-P7lvG75V6V4-unsplash.jpg" alt="Woman meditating"/>
+        <h3>Group Classes</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+      </div>
+      <div class="card-md">
+        <img src="assets/cards/madison-lavern-lt553PnEReM-unsplash.jpg" alt="Woman meditating"/>
+        <h3>Yoga Retreats</h3>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+      </div>
+    </section>
+    <!-- Contact -->
+    <section class="contact" id="contact">
+      
+        <h2>Contact Us</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <div class="contact-content">
+        <form action="#" method="POST" class="contact-form">
+          <input name="name" type="text" id="name" placeholder="Name">
+          <input name="email" type="email" id="email" placeholder="Email">
+          <input name="message" type="text" id="message" placeholder="Message">
+        </form>
+      </div>
+    </section>
+    <footer>
+      <div class="image-credit">
+        <p>Demo website template coded with ♥ by Stephanie Aurelio</p>
+        <p>Background photos by <a href="https://unsplash.com/@wesleyphotography?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText" alt="Unsplash Image Source">Wesley Tingey</a> on <a href="https://unsplash.com/ alt="Unsplash Main Page">Unsplash</a></p>
+        <p>Content Card photos by <a href="https://unsplash.com/@yogagenapp" alt="Unsplash photo source">madison lavern</a> on Unsplash</p>
+      </div>
+    </footer>
   </body>
 </html>

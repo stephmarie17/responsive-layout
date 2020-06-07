@@ -1,0 +1,51 @@
+.contact {
+  background-image: url('/assets/hero/wesley-tingey-57wo9F-r2-A-unsplash.jpg');
+  height: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  h2 {
+    padding-top: 50px;
+    text-align: center;
+    color: $secondary-color;
+    font-size: 36px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+
+  p {
+    margin: 20px;
+    padding: 30px;
+    color: $secondary-color;
+    font-family: $secondary-font;
+    font-size: 18px;
+    text-align: center;
+  }
+
+  .contact-content {
+    display: block;
+    max-width: 60%;
+    margin: 0 auto;
+  }
+
+  .contact-form {
+    input {
+      height: 34px;
+      width: 100%;
+      margin-top: 10px;
+      background-color: $dark-color;
+      border: none;
+      padding: 5px;
+      opacity: 0.5;
+    }
+
+    #message {
+      margin-top: 10px;
+      width: 100%;
+      margin-bottom: 40px;
+      min-height: 200px;
+    }
+  }
+}

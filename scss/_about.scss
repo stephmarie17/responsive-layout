@@ -1,0 +1,25 @@
+.about-content {
+  background-image: url('/assets/hero/wesley-tingey-rtS8Fpb3rcI-unsplash.jpg');
+  height: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  h2 {
+    padding-top: 50px;
+    text-align: center;
+    color: $secondary-color;
+    font-size: 36px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+
+  p {
+    margin: 20px;
+    padding: 30px;
+    color: $secondary-color;
+    font-family: $secondary-font;
+    font-size: 18px;
+  }
+}

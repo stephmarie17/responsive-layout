@@ -6,12 +6,14 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  scroll-behavior: smooth;
 }
 
 body {
   font-family: $primary-font;
 }
 
+// Navigation
 nav {
   display: flex;
   justify-content: space-around;
@@ -20,10 +22,11 @@ nav {
   background-color: $primary-color;
 
   .logo {
-    color: #ebeaea;
+    color: $light-color;
     text-transform: uppercase;
     letter-spacing: 5px;
     font-size: 20px;
+    cursor: default;
   }
 
   .nav-links {
@@ -36,7 +39,7 @@ nav {
     }
 
     a {
-      color: #ebeaea;
+      color: $light-color;
       text-decoration: none;
       letter-spacing: 3px;
       font-weight: bold;
@@ -49,7 +52,7 @@ nav {
     div {
       width: 25px;
       height: 3px;
-      background-color: #ebeaea;
+      background-color: $light-color;
       margin: 5px;
       transition: transform 0.5s ease-in;
     }
@@ -68,4 +71,40 @@ nav {
 }
 .toggle .line3 {
   transform: rotate(45deg) translate(-5px, -6px);
+}
+
+// Hero
+@import 'hero';
+
+// Cards
+@import 'cards';
+
+// About Hero
+@import 'about';
+
+// Contact
+@import 'contact';
+
+// Footer
+footer {
+  width: 100%;
+  text-align: center;
+  padding-top: 10px;
+  background-color: $primary-color;
+  position: sticky;
+  margin: 0;
+
+  p {
+    font-size: 0.75em;
+    color: $light-color;
+  }
+
+  p:last-of-type {
+    padding-bottom: 20px;
+  }
+
+  a {
+    color: $secondary-color;
+    text-decoration: none;
+  }
 }
