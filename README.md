@@ -6,7 +6,7 @@ Single-page website designed for both desktop and mobile devices. Created with H
 
 ## Demo
 ### Desktop
-![Desktop Demo](demo-gifs/responsive_demo_desktop.gif)
+![Desktop Demo](demo-gifs/responsive-demo_desktop.gif)
 
 ### Mobile
 ![Mobile Demo](demo-gifs/responsive_demo_mobile.gif)
